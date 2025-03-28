@@ -5,7 +5,7 @@ module.exports = (client) => {
     // Evento de novo membro entrando no servidor
     client.on('guildMemberAdd', async (member) => {
         try {
-            // Busca o cargo pelo ID, forçando a atualização do cache
+            // Busca o cargo pelo ID
             const role = await member.guild.roles.fetch(roleId);
 
             if (role) {
