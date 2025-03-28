@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { Client, GatewayIntentBits } = require("discord.js");
+const { Client, GatewayIntentBits, Collection } = require("discord.js");  // Add Collection import
 const fs = require("fs");
 const express = require("express");
 const app = express();
